@@ -81,4 +81,7 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
     }
+    .services__card, .works__card {
+        margin: 25px 0px;
+    }
 }

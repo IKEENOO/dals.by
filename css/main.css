@@ -238,12 +238,13 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .about__us__block, .our__job__block, .map, .contact__info {
+    .about__us__block__two, .our__job__block__one, .map {
         width: 90vw;
         height: 40vh;
         margin: 10px;
     }
-    .our__job__block__two, .about__us__block__one {
+    .our__job__block__two, .about__us__block__one, .contact__info {
         height: auto;
+        width: 90vw;
     }
 }

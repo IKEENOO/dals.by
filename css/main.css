@@ -16,12 +16,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.au__h, .m__h, .s__h, h3 {
+.m__h, h3 {
     font-family: 'Roboto Slab', serif;
     text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
 }
 .m__h {
     padding-bottom: 50px;
+}
+.about__section {
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
 }
 .main h1, h2 {
     color: #fff;
@@ -49,17 +53,18 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-.au__h2, .au__h3, .s__h2, .s__h3, .oj__h2, .w__h2, .с__h2 {
+.section__description, .section__name {
     color: rgba(65, 122, 196);
     margin: 0px;
     padding: 8px;
 }
-.m__h1, .au__h2, .s__h2, .oj__h2, .w__h2, .с__h2 {
+.m__h1, .section__name {
     font-size: 64px;
 }
-.m__h2, .au__h3, .s__h3 {
+.m__h2, .section__description {
     font-size: 32px;
 }
+
 .about__us__blocks, .our__job__blocks {
     display: flex;
     align-items: center;

@@ -1,0 +1,247 @@
+body {
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100vh;
+    background-image: url(../assets/main_page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.au__h, .m__h, .s__h, h3 {
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
+}
+.m__h {
+    padding-bottom: 50px;
+}
+.m__h1 {
+    font-size: 64px;
+}
+.m__h2 {
+    font-size: 32px;
+}
+.main h1, h2 {
+    color: #fff;
+    margin: 15px;
+    text-align: center;
+    text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
+}
+.what__we__do {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    color: #fff;
+}
+.what__we__do p{
+    font-size: 20px;
+    text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
+    margin: 18px 0px;
+    display: flex;
+    align-items: center;
+}
+.about__us, .our__job{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.au__h2, .au__h3, .s__h2, .s__h3, .oj__h2, .w__h2, .с__h2 {
+    color: rgba(65, 122, 196);
+    margin: 0px;
+    padding: 8px;
+}
+.au__h2, .s__h2, .oj__h2, .w__h2, .с__h2 {
+    font-size: 64px;
+}
+.au__h3, .s__h3 {
+    font-size: 32px;
+}
+.about__us__blocks, .our__job__blocks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.about__us__block, .our__job__block {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.35);
+    transition: 0.3s;
+    border-radius: 20px;
+    margin: 25px;
+}
+.about__us__block:hover, .our__job__block:hover, .map:hover {
+    box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.5);
+} 
+.about__us__block__one p, .our__job__block__two p {
+    margin: 25px;
+    text-align: center;
+    font-size: 26px;
+}
+.about__us__block__two {
+    background-image: url(../assets/about_us.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our__job__block__one {
+    background-image: url(../assets/our_job.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services, .works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.services__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card__image {
+    height: 125px;
+    background-image: url(../assets/cards/engineering.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 20px 20px 0px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service__name {
+    color: #fff;
+    font-size: 32px;
+    margin: 0px;
+    text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
+}
+.services__card, .works__card {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.35);
+    margin: 25px;
+}
+.card_description {
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.card_description p {
+    margin: 0px;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.works__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.works__card {
+    width: 400px;
+    height: 290px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.link__button {
+    display: flex;
+    background: linear-gradient(20deg, rgba(65,122,196,1) 0%, rgba(83,89,155,1) 70%);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+.link__services, .link__works, .link__contacts {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+#link__button a {
+    display: flex;
+    align-items: center;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+.contact__info p {
+    padding: 10px;
+    margin: 0px;
+}
+.contact__info a {
+    text-decoration: none;
+    color: black;
+
+}
+.map, .contact__info {
+    box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.35);
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px;
+    margin: 25px;
+}
+.c__h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 15px;
+    color: rgba(65,122,196,1);
+    font-size: 24px;
+}
+#contact__info a {
+    display: flex;
+    align-items: center;
+}
+.material-icons {
+    margin: 0px 10px 0px 0px;
+}
+@media screen and (max-width: 1280px){
+    .about__us__blocks, .our__job__block, .services__cards, .contact{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .about__us__block, .our__job__block, .map, .contact__info {
+        width: 90vw;
+        height: 40vh;
+        margin: 10px;
+    }
+}

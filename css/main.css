@@ -23,12 +23,6 @@ body {
 .m__h {
     padding-bottom: 50px;
 }
-.m__h1 {
-    font-size: 64px;
-}
-.m__h2 {
-    font-size: 32px;
-}
 .main h1, h2 {
     color: #fff;
     margin: 15px;
@@ -60,10 +54,10 @@ body {
     margin: 0px;
     padding: 8px;
 }
-.au__h2, .s__h2, .oj__h2, .w__h2, .с__h2 {
+.m__h1, .au__h2, .s__h2, .oj__h2, .w__h2, .с__h2 {
     font-size: 64px;
 }
-.au__h3, .s__h3 {
+.m__h2, .au__h3, .s__h3 {
     font-size: 32px;
 }
 .about__us__blocks, .our__job__blocks {

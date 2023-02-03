@@ -1,0 +1,82 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.pic {
+    height: 25vh;
+    background-image: url(../assets/about_us1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.с__h2 {
+    font-size: 64px;
+    color: rgba(65, 122, 196);
+    margin: 0px;
+    padding: 8px;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+.contact__info p {
+    padding: 10px;
+    margin: 0px;
+}
+.contact__info a {
+    text-decoration: none;
+    color: black;
+
+}
+.map, .contact__info {
+    box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.35);
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px;
+    margin: 25px;
+}
+.c__h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 15px;
+    color: rgba(65,122,196,1);
+    font-size: 24px;
+}
+#contact__info a {
+    display: flex;
+    align-items: center;
+}
+.material-icons {
+    margin: 0px 10px 0px 0px;
+}
+@media screen and (max-width: 1280px){
+    .contact{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+     .map, .contact__info {
+        width: 90vw;
+        height: 40vh;
+        margin: 10px;
+    }
+}

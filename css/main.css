@@ -56,13 +56,14 @@ body {
 .section__description, .section__name {
     color: rgba(65, 122, 196);
     margin: 0px;
-    padding: 8px;
+    padding: 8px 0px;
 }
 .m__h1, .section__name {
     font-size: 64px;
 }
 .m__h2, .section__description {
     font-size: 32px;
+    text-align: center;
 }
 
 .about__us__blocks, .our__job__blocks {
@@ -146,7 +147,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0px;
 }
 .card_description p {
     margin: 0px;
@@ -241,10 +242,15 @@ body {
     .about__us__block__two, .our__job__block__one, .map {
         width: 90vw;
         height: 40vh;
-        margin: 10px;
+        margin: 10px auto;
     }
     .our__job__block__two, .about__us__block__one, .contact__info {
         height: auto;
         width: 90vw;
+        margin: 20px auto;
+    }
+    .services__card, .works__card {
+        width: 375px;
+        margin: 25px auto;
     }
 }

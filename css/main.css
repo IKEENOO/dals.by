@@ -243,4 +243,7 @@ body {
         height: 40vh;
         margin: 10px;
     }
+    .our__job__block__two, .about__us__block__one {
+        height: auto;
+    }
 }

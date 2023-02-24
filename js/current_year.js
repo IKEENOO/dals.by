@@ -1,5 +1,5 @@
-const year = document.querySelector('#current__year');
 
-year.innerHTML = new Date().getFullYear();
-
-document.write(new Date().getFullYear());
+    var date = new Date();
+    var hours = date.getFullYear();
+    var a = document.getElementById('current__year');
+    a.innerHTML = hours;

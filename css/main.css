@@ -130,6 +130,7 @@ body {
     justify-content: center;
 }
 .service__name {
+    text-align: center;
     color: #fff;
     font-size: 32px;
     margin: 0px;
@@ -252,5 +253,23 @@ body {
     .services__card, .works__card {
         width: 375px;
         margin: 25px auto;
+    }
+}
+@media screen and (max-width: 400px){
+    .services__card {
+        width: auto;
+        margin: 25px 10px;
+    }
+}
+@media screen and (max-width: 450px){
+    .services__card, .works__card {
+        width: 90vw;
+        margin: 25px auto;
+    }
+    .section__name {
+        font-size: 40px;
+    }
+    .m__h2 {
+        font-size: 24px;
     }
 }

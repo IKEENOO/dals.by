@@ -51,3 +51,9 @@ body {
         margin: 25px auto;
     }
 }
+@media screen and (max-width: 450px){
+    .services__card, .works__card {
+        width: 90vw;
+        margin: 25px auto;
+    }
+}

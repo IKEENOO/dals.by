@@ -81,22 +81,21 @@ body {
 .section__block:hover, .our__job__block:hover {
     box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.5);
 } 
-.section__text p, .our__job__block__two p {
+.section__text p {
     margin: 25px;
     text-align: center;
     font-size: 26px;
 }
-.section__photo, .about__us__photo {
-    background-image: url(../assets/about_us.jpg);
+.section__photo {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.our__job__block__one {
+.about__us__photo {
+    background-image: url(../assets/about_us.jpg);
+}
+.our__job__photo {
     background-image: url(../assets/our_job.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .services, .works {
@@ -232,16 +231,16 @@ body {
     margin: 0px 10px 0px 0px;
 }
 @media screen and (max-width: 1280px){
-    .about__us__blocks, .our__job__block, .services__cards, .contact{
+    .section__block, .about__us__blocks, .our__job__block, .services__cards, .contact{
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .about__us__block__two, .our__job__block__one, .map {
+    .section__photo, .map {
         width: 90vw;
         height: 40vh;
         margin: 10px auto;
     }
-    .our__job__block__two, .about__us__block__one, .contact__info {
+    .section__text, .contact__info {
         height: auto;
         width: 90vw;
         margin: 20px auto;

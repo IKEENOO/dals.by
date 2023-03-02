@@ -1,6 +1,5 @@
 body {
     margin: 0 auto;
-
     box-sizing: border-box;
     font-family: 'Exo 2', sans-serif;
 }
@@ -16,11 +15,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.m__h, h3 {
+.m__h {
     font-family: 'Roboto Slab', serif;
     text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
-}
-.m__h {
     padding-bottom: 50px;
 }
 .about__section {
@@ -37,7 +34,6 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-
     color: #fff;
 }
 .what__we__do p{
@@ -66,13 +62,13 @@ body {
     text-align: center;
 }
 
-.about__us__blocks, .our__job__blocks {
+.section__blocks {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.about__us__block, .our__job__block {
+.section__block, .our__job__block {
     width: 40vw;
     aspect-ratio: 1.5;
     display: flex;
@@ -82,15 +78,15 @@ body {
     border-radius: 20px;
     margin: 25px;
 }
-.about__us__block:hover, .our__job__block:hover, .map:hover {
+.section__block:hover, .our__job__block:hover, .map:hover {
     box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.5);
 } 
-.about__us__block__one p, .our__job__block__two p {
+.section__text p, .our__job__block__two p {
     margin: 25px;
     text-align: center;
     font-size: 26px;
 }
-.about__us__block__two {
+.section__photo, .about__us__photo {
     background-image: url(../assets/about_us.jpg);
     background-position: center;
     background-repeat: no-repeat;

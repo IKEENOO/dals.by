@@ -17,11 +17,6 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-.works__card {
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.35);
-    margin: 25px;
-}
 .works__cards {
     display: flex;
     align-items: center;
@@ -31,14 +26,15 @@ body {
 .works__card {
     width: 400px;
     height: 290px;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     transition: 0.3s;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.35);
+    margin: 25px;
 }
-.w__h2 {
+.section__name {
     text-align: center;
     font-size: 64px;
     color: rgba(65, 122, 196);
@@ -54,6 +50,5 @@ body {
 @media screen and (max-width: 450px){
     .services__card, .works__card {
         width: 90vw;
-        margin: 25px auto;
     }
 }

@@ -6,7 +6,7 @@ body {
 }
 .pic {
     height: 25vh;
-    background-image: url(../assets/about_us1.jpg);
+    background-image: url(../assets/pic.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

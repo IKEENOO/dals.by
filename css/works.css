@@ -41,14 +41,10 @@ body {
     margin: 0px;
     padding: 8px;
 }
-@media screen and (max-width: 750px){
-    .services__card, .works__card {
-        width: 375px;
-        margin: 25px auto;
-    }
-}
 @media screen and (max-width: 450px){
     .services__card, .works__card {
         width: 90vw;
+        aspect-ratio: 0.725;
+        margin: 25px auto;
     }
 }

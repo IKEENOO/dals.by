@@ -1,0 +1,13 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.main__block {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../assets/Main_block.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}

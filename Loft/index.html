@@ -6,12 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navigation.css">
 
     <title>Главная - Loft Dals</title>
 </head>
 <body>
     <!-- Nav bar -->
-    
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+          <span class="material-icons">menu</span>
+        </button>
+        <img src="assets/dals_logo.png" alt="#" class="navbar-title">
+        <nav class="navbar-menu">
+          <button type="button">Skills</button>
+          <button type="button" class="active">Awards</button>
+          <button type="button">Projects</button>
+        </nav>
+      </nav>
+      <script type="text/javascript">
+        const toggleMenuOpen = () => document.body.classList.toggle("open");
+      </script>
+
     <!-- Main block -->
     <div class="main__block">
         <div class="tagline__block">

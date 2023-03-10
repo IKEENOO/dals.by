@@ -1,0 +1,22 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+}
+.works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.work__card {
+    width: 300px;
+    aspect-ratio: 1/1.5;
+    margin: 20px;
+}
+@media screen and (max-width: 1281px) {
+    .container {
+        width: 100%;
+    }
+}

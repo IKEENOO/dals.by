@@ -3,56 +3,14 @@ body {
     box-sizing: border-box;
     font-family: 'Alumni Sans Pinstripe', sans-serif;
 }
-.main__block {
-    display: flex;
-    align-items: end;
-    justify-content: start;
-    height: 100vh;
-    background-image: url(../assets/Main_block.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
-}
-.tagline__block {
-    width: 35vw;
-    margin-left: 5vw;
-    margin-bottom: 5vw;
-}
-.tagline__text {
-    color: #fff;
-    font-size: 48px;
-}
-.first__block, .second__block {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-}
-.pic__block, .text__block {
-    width: 50vw;
-}
-.text__block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.text__box {
-    margin: auto 10vw;
-}
-.text__box p {
-    font-size: 20px;
-}
-.pic__block {
-    height: 100vh;
-    width: 50vw;
+.pic {
+    height: 25vh;
+    width: 100%;
+    background-image: url(../assets/pic.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-
-
 .contacts {
     display: flex;
     align-items: center;

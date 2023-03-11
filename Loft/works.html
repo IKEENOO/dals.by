@@ -10,7 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Работы - Loft Dals</title>
@@ -24,9 +24,9 @@
         </button>
         <img src="assets/dals_logo.png" alt="#" class="navbar-title">
         <nav class="navbar-menu">
-          <button type="button" class="active">Главная</button>
-          <button type="button">Работы</button>
-          <button type="button">Контакты</button>
+          <button type="button" onclick="document.location='index.html'">Главная</button>
+          <button type="button" class="active">Работы</button>
+          <button type="button" onclick="document.location='contacts.html'">Контакты</button>
         </nav>
       </nav>
       <script type="text/javascript">
@@ -34,22 +34,27 @@
       </script>
 
       <!-- Works -->
-      <h2 class="tite">
-        Наши работы
-      </h2>
+      <div class="pic"></div>
       <div class="container">
+        <h2 class="title">
+          Работы
+        </h2>
         <div class="works">
-          <div class="work__card" style="background-image: url(assets/EhE_ZAF4ClE.jpg);"></div>
-          <div class="work__card" style="background-image: url(assets/Stelazh.jpg);"></div>
-          <div class="work__card" style="background-image: url(assets/Stol.jpg);"></div>
-          <div class="work__card"></div>
-          <div class="work__card"></div>
-          <div class="work__card"></div>
-          <div class="work__card"></div>
-          <div class="work__card"></div>
-          <div class="work__card"></div>
-          <div class="work__card"></div>
+          <div class="work__card" style="background-image: url(assets/works/bolshoy_stol.jpg);"></div>
+          <div class="work__card" style="background-image: url(assets/works/malenki_stelazh.jpg);"></div>
+          <div class="work__card" style="background-image: url(assets/works/plohoy_stul.jpg);"></div>
+          <div class="work__card" style="background-image: url(assets/works/sredniy_stelazh.jpg);"></div>
+          <div class="work__card" style="background-image: url(assets/works/stelazh_bolshoy.jpg);"></div>
+          <div class="work__card" style="background-image: url(assets/works/strany_stol.jpg);"></div>
+          <div class="work__card" style="background-image: url(assets/works/stul_barny.jpg);"></div>
+          <div class="work__card" style="background-image: url(assets/works/stul_kozha.jpg);"></div>
         </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="copyright">
+        <p style="cursor: default;">ООО "СКБ ДалС" &copy; 2014 - <span id="current__year"></span>. Все права защищены.<p>
+        <script src="../js/current_year.js"></script>    
       </div>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/navigation.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <title>Главная - Loft Dals</title>
+    <title>Контакты - Loft Dals</title>
 </head>
 <body>
     <!-- Nav bar -->
@@ -24,52 +24,19 @@
         </button>
         <img src="assets/dals_logo.png" alt="#" class="navbar-title">
         <nav class="navbar-menu">
-          <button type="button" class="active">Главная</button>
+          <button type="button" onclick="document.location='index.html'">Главная</button>
           <button type="button" onclick="document.location='works.html'">Работы</button>
-          <button type="button"  onclick="document.location='contacts.html'">Контакты</button>
+          <button type="button" class="active">Контакты</button>
         </nav>
       </nav>
       <script type="text/javascript">
         const toggleMenuOpen = () => document.body.classList.toggle("open");
       </script>
 
-    <!-- Main block -->
-    <div class="main__block">
-        <div class="tagline__block">
-            <p class="tagline__text">
-                Найдите свой идеальный Loft-стиль с нами
-            </p>
-        </div>
-    </div>
-
-    <!-- First block -->
-    <div class="first__block">
-        <div class="pic__block" style="background-image: url(assets/main_one.jpg);">
-
-        </div>
-        <div class="text__block">
-            <div class="text__box">
-                <p>
-                    Наша к омпания является представителем современной мебельной индустрии. Мы предлагаем превосходное качество и дизайн уникальной Loft-мебели. Наша мебель имеет модный стиль и подходит как для элегантных, так и для современных интерьеров.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- Second block -->
-    <div class="second__block">
-        <div class="text__block">
-            <div class="text__box">
-                <p>
-                    Вся наша мебель прошла предусмотренные тесты на прочность и долговечность. Мы предлагаем практические решения для любого интерьера, поэтому вы можете быть уверены, что ваш дом будет выглядеть потрясающе.
-                </p>
-            </div>
-        </div>
-        <div class="pic__block" style="background-image: url(assets/main_two.jpg);"></div>
-    </div>
-
     <!-- Contacts -->
     <section>
         <div class="contacts">
+            <div class="pic"></div>
             <div>
                 <div class="about__section">
                     <h2 class="section__description">Контакты</h2>
@@ -96,6 +63,6 @@
     <div class="copyright">
         <p style="cursor: default;">ООО "СКБ ДалС" &copy; 2014 - <span id="current__year"></span>. Все права защищены.<p>
         <script src="../js/current_year.js"></script>    
-    </div>
+      </div>
 </body>
 </html>

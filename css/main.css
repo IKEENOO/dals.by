@@ -43,7 +43,7 @@ body {
     display: flex;
     align-items: center;
 }
-.about__us, .our__job{
+.about__us, .our__job, .loft {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,6 +96,9 @@ body {
 }
 .our__job__photo {
     background-image: url(../assets/our_job.jpg);
+}
+.loft__photo {
+    background-image: url(../Loft/assets/Main_block.jpg);
 }
 
 .services, .works {

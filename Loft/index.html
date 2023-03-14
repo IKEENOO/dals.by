@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navigation.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Главная - Loft Dals</title>
@@ -25,77 +25,55 @@
         <img src="assets/dals_logo.png" alt="#" class="navbar-title">
         <nav class="navbar-menu">
           <button type="button" class="active">Главная</button>
+          <button type="button" onclick="document.location='about.html'"> О нас</button>
           <button type="button" onclick="document.location='works.html'">Работы</button>
           <button type="button"  onclick="document.location='contacts.html'">Контакты</button>
         </nav>
-      </nav>
-      <script type="text/javascript">
+    </nav>
+    <script type="text/javascript">
         const toggleMenuOpen = () => document.body.classList.toggle("open");
-      </script>
+    </script>   
 
     <!-- Main block -->
     <div class="main__block">
-        <div class="tagline__block">
-            <p class="tagline__text">
-                Найдите свой идеальный Loft-стиль с нами
-            </p>
-        </div>
-    </div>
-
-    <!-- First block -->
-    <div class="first__block">
-        <div class="pic__block" style="background-image: url(assets/main_one.jpg);">
-
-        </div>
-        <div class="text__block">
-            <div class="text__box">
-                <p>
-                    Наша компания является представителем современной мебельной индустрии. Мы предлагаем превосходное качество и дизайн уникальной Loft-мебели. Наша мебель имеет модный стиль и подходит как для элегантных, так и для современных интерьеров.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- Second block -->
-    <div class="second__block">
-        <div class="text__block">
-            <div class="text__box">
-                <p>
-                    Вся наша мебель прошла предусмотренные тесты на прочность и долговечность. Мы предлагаем практические решения для любого интерьера, поэтому вы можете быть уверены, что ваш дом будет выглядеть потрясающе.
-                </p>
-            </div>
-        </div>
-        <div class="pic__block" style="background-image: url(assets/main_two.jpg);"></div>
-    </div>
-
-    <!-- Contacts -->
-    <section>
-        <div class="contacts">
-            <div>
-                <div class="about__section">
-                    <h2 class="section__description">Контакты</h2>
+        <h1 class="tagline__text">
+            Найдите свой идеальный Loft-стиль с нами
+        </h1>
+        <div class="link__blocks">
+            <a  class="link__block" href="">
+                <div >
+                    <h2>
+                        О нас
+                    </h2>
+                    <hr>
+                    <p>
+                        Узнайте о компании, ее миссии, целях и истории
+                    </p>
                 </div>
-            </div>
-            <div class="contact">
-                <iframe class="map" src="https://yandex.by/map-widget/v1/org/ooo_spetsialnoye_konstruktorskoye_byuro_dals/221851081017/?ll=30.389543%2C53.813824&z=20.17"  allowfullscreen="true" style="position:relative;"></iframe>
-                <div class="contact__info">
-
-                    <h5 class="c__h5">Адрес</h5>
-                    <p>Могилевская область, Могилевский р-н, Вейнянский с/с, а.г. Вейно</p>
-                    
-                    <h5 class="c__h5">Телефон</h5>
-                    <a href="tel:80333814010"><i class="material-icons">phone</i>+375 (33) 381-40-10</a>
-                    
-                    <h5 class="c__h5">Электронная почта</h5>
-                    <a href="mailto:contact.dals.by@gmail.com"><i class="material-icons">mail</i>contact.dals.by@gmail.com</a>
+            </a>
+            <a  class="link__block" href="">
+                <div>
+                    <h2>
+                        Работы
+                    </h2>
+                    <hr>
+                    <p>
+                        Посмотрите примеры работ, выполненных компанией
+                    </p>
                 </div>
-            </div>   
+            </a>
+            <a  class="link__block" href="">
+                <div>
+                    <h2>
+                        Контакты
+                    </h2>
+                    <hr>
+                    <p>
+                        Свяжитесь с нами и узнайте больше о наших услугах
+                    </p>
+                </div>
+            </a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <div class="copyright">
-        <p style="cursor: default;">ООО "СКБ ДалС" &copy; 2014 - <span id="current__year"></span>. Все права защищены.<p>
-        <script src="../js/current_year.js"></script>    
     </div>
 </body>
 </html>

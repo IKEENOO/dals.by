@@ -6,8 +6,8 @@ body {
 }
 .main__block {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: end;
     height: 100vh;
     background-image: url(../assets/Main_block.jpg);
     background-position: center;
@@ -16,14 +16,15 @@ body {
     z-index: 0;
 }
 .tagline__block {
-    width: 50vw;
-    text-align: center;
+    max-width: 70vw;
+    margin: auto auto 5vw 5vw;
 }
 hr {
     width: 90%;
 }
 .tagline__text {
     color: #fff;
+    font-size: 5vh;
 }
 .first__block, .second__block {
     height: 100vh;
@@ -101,4 +102,5 @@ margin: 20px auto;
 }
 .copyright p {
     color: #fff;
+    text-align: center;
 }

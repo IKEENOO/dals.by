@@ -10,7 +10,7 @@ body {
     flex-direction: column;
 
     height: 100vh;
-    background-image: url(../assets/main_page.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/assets/main_page.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,13 +92,13 @@ body {
     background-size: cover;
 }
 .about__us__photo {
-    background-image: url(../assets/about_us.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/assets/about_us.jpg);
 }
 .our__job__photo {
-    background-image: url(../assets/our_job.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/assets/our_job.jpg);
 }
 .loft__photo {
-    background-image: url(../Loft/assets/Main_block.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/Loft/assets/Main_block.jpg);
 }
 
 .services, .works {
@@ -116,7 +116,7 @@ body {
 }
 .card__image {
     height: 125px;
-    background-image: url(../assets/cards/engineering.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/assets/cards/engineering.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

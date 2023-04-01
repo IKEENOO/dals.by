@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navigation.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,9 +46,9 @@
 
     <!-- First block -->
     <div class="first__block">
-        <div class="pic__block" style="background-image: url(assets/main_one.jpg);">
+        <div data-aos="fade-right" class="pic__block" style="background-image: url(assets/main_one.jpg);">
         </div>
-        <div class="text__block">
+        <div data-aos="fade-left"class="text__block">
             <div class="text__box">
                 <p>
                     Наша компания является представителем современной мебельной индустрии. Мы предлагаем превосходное качество и дизайн уникальной Loft-мебели. Наша мебель имеет модный стиль и подходит как для элегантных, так и для современных интерьеров.
@@ -56,14 +58,14 @@
     </div>
     <!-- Second block -->
     <div class="second__block">
-        <div class="text__block">
+        <div data-aos="fade-right" class="text__block">
             <div class="text__box">
                 <p>
                     Вся наша мебель прошла предусмотренные тесты на прочность и долговечность. Мы предлагаем практические решения для любого интерьера, поэтому вы можете быть уверены, что ваш дом будет выглядеть потрясающе.
                 </p>
             </div>
         </div>
-        <div class="pic__block" style="background-image: url(assets/main_two.jpg);">
+        <div data-aos="fade-left" class="pic__block" style="background-image: url(assets/main_two.jpg);">
         </div>
     </div>
 
@@ -89,5 +91,10 @@
             <script src="../js/current_year.js"></script>    
         </div>    
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

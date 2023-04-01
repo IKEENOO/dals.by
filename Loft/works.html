@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="css/works.css">
     <link rel="stylesheet" href="css/navigation.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Работы - Loft Dals</title>
@@ -40,14 +42,14 @@
           Работы
         </h2>
         <div class="works">
-          <div class="work__card" style="background-image: url(assets/works/bolshoy_stol.jpg);"></div>
-          <div class="work__card" style="background-image: url(assets/works/malenki_stelazh.jpg);"></div>
-          <div class="work__card" style="background-image: url(assets/works/plohoy_stul.jpg);"></div>
-          <div class="work__card" style="background-image: url(assets/works/sredniy_stelazh.jpg);"></div>
-          <div class="work__card" style="background-image: url(assets/works/stelazh_bolshoy.jpg);"></div>
-          <div class="work__card" style="background-image: url(assets/works/strany_stol.jpg);"></div>
-          <div class="work__card" style="background-image: url(assets/works/stul_barny.jpg);"></div>
-          <div class="work__card" style="background-image: url(assets/works/stul_kozha.jpg);"></div>
+          <div data-aos="fade-up" class="work__card" style="background-image: url(assets/works/malenki_stelazh.jpg);"></div>
+          <div data-aos="fade-up" class="work__card" style="background-image: url(assets/works/bolshoy_stol.jpg);"></div>
+          <div data-aos="fade-up" class="work__card" style="background-image: url(assets/works/plohoy_stul.jpg);"></div>
+          <div data-aos="fade-up" class="work__card" style="background-image: url(assets/works/sredniy_stelazh.jpg);"></div>
+          <div data-aos="fade-up" class="work__card" style="background-image: url(assets/works/stelazh_bolshoy.jpg);"></div>
+          <div data-aos="fade-up" class="work__card" style="background-image: url(assets/works/strany_stol.jpg);"></div>
+          <div data-aos="fade-up" class="work__card" style="background-image: url(assets/works/stul_barny.jpg);"></div>
+          <div data-aos="fade-up" class="work__card" style="background-image: url(assets/works/stul_kozha.jpg);"></div>
         </div>
       </div>
 
@@ -73,5 +75,10 @@
           <script src="../js/current_year.js"></script>    
       </div>    
   </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
 </body>
 </html>

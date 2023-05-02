@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru ">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +8,16 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navigation.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <title>Главная - Loft Dals</title>
+    <title>О нас - Loft Dals</title>
 </head>
 <body>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
- 
-    ym(92936786, "init", {
-         clickmap:true,
-         trackLinks:true,
-         accurateTrackBounce:true
-    });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/92936786" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-
     <!-- Nav bar -->
     <nav class="navbar">
         <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
@@ -42,55 +27,74 @@
         <img src="assets/dals_logo.png" alt="#" class="navbar-title">
         <nav class="navbar-menu">
           <button type="button" class="active">Главная</button>
-          <button type="button" onclick="document.location='about.html'"> О нас</button>
           <button type="button" onclick="document.location='works.html'">Работы</button>
           <button type="button"  onclick="document.location='contacts.html'">Контакты</button>
         </nav>
     </nav>
     <script type="text/javascript">
         const toggleMenuOpen = () => document.body.classList.toggle("open");
-    </script>   
+    </script>
 
-    <!-- Main block -->
+    <!-- About us-->
     <div class="main__block">
-        <h1 class="tagline__text">
-            Найдите свой идеальный Loft-стиль с нами
-        </h1>
-        <div class="link__blocks">
-            <a  class="link__block" href="about.html">
-                <div >
-                    <h2>
-                        О нас
-                    </h2>
-                    <hr>
-                    <p>
-                        Узнайте о компании, ее миссии, целях и истории
-                    </p>
-                </div>
-            </a>
-            <a  class="link__block" href="works.html">
-                <div>
-                    <h2>
-                        Работы
-                    </h2>
-                    <hr>
-                    <p>
-                        Посмотрите примеры работ, выполненных компанией
-                    </p>
-                </div>
-            </a>
-            <a  class="link__block" href="contacts.html">
-                <div>
-                    <h2>
-                        Контакты
-                    </h2>
-                    <hr>
-                    <p>
-                        Свяжитесь с нами и узнайте больше о наших услугах
-                    </p>
-                </div>
-            </a>
+        <div class="tagline__block">
+            <h1 class="tagline__text">
+                Найдите свой идеальный Loft-стиль с нами
+            </h1>
         </div>
     </div>
+
+    <!-- First block -->
+    <div class="first__block">
+        <div data-aos="fade-right" class="pic__block" style="background-image: url(assets/main_one.jpg);">
+        </div>
+        <div data-aos="fade-left"class="text__block">
+            <div class="text__box">
+                <p>
+                    Наша компания является представителем современной мебельной индустрии. Мы предлагаем превосходное качество и дизайн уникальной Loft-мебели. Наша мебель имеет модный стиль и подходит как для элегантных, так и для современных интерьеров.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Second block -->
+    <div class="second__block">
+        <div data-aos="fade-right" class="text__block">
+            <div class="text__box">
+                <p>
+                    Вся наша мебель прошла предусмотренные тесты на прочность и долговечность. Мы предлагаем практические решения для любого интерьера, поэтому вы можете быть уверены, что ваш дом будет выглядеть потрясающе.
+                </p>
+            </div>
+        </div>
+        <div data-aos="fade-left" class="pic__block" style="background-image: url(assets/main_two.jpg);">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <img class="footer__logo" src="assets/dals_logo.png" alt="Логотип">
+        <p class="footer__tagline">
+            Найдите свой идеальный Loft-стиль с нами
+        </p>
+        <ul>
+            <li>
+                <a href="index.html">Главная</a>
+            </li>
+            <li>
+                <a href="works.html">Работы</a>
+            </li>
+            <li>
+                <a href="contacts.html">Контакты</a>
+            </li>
+        </ul>
+        <div class="copyright">
+            <p style="cursor: default;">ООО "СКБ ДалС" &copy; 2014 - <span id="current__year"></span>. Все права защищены.<p>
+            <script src="../js/current_year.js"></script>    
+        </div>    
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -84,6 +84,8 @@ nav .icon-burger .line {
 		right: 0;
 		top: 75px;
 		bottom: 100%;
+		border-radius: inherit;
+		margin: inherit;
 		width: auto;
 		height: auto;
 		flex-direction: column;

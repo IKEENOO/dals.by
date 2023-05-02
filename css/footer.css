@@ -24,15 +24,12 @@
     align-items: center;
     justify-content: space-evenly; 
     flex-wrap: wrap;
-
-    padding: 15px 0px;
+    padding: 15px 25px;
 }
-
 .copyright {
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: #1b2428;
     height: 30px;
     padding: 5px 0px;
@@ -48,7 +45,6 @@
 }
 @media screen and (max-width: 1000px){
     .footer__blocks {
-        padding-left: 25px;
         align-items: flex-start;
         justify-content: start;
         flex-direction: column;

@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/navigation.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Контакты - Loft Dals</title>
@@ -25,7 +27,6 @@
         <img src="assets/dals_logo.png" alt="#" class="navbar-title">
         <nav class="navbar-menu">
           <button type="button" onclick="document.location='index.html'">Главная</button>
-          <button type="button" onclick="document.location='about.html'"> О нас</button>
           <button type="button" onclick="document.location='works.html'">Работы</button>
           <button type="button" class="active">Контакты</button>
         </nav>
@@ -45,8 +46,8 @@
             </div>
             <div class="contact">
 
-                <iframe class="map" src="https://yandex.by/map-widget/v1/?ll=30.353616%2C53.816826&mode=search&oid=28928490196&ol=biz&sll=29.225542%2C53.145595&sspn=0.151405%2C0.052121&text=%D1%81%D0%BA%D0%B1%20%D0%B4%D0%B0%D0%BB%D1%81&z=11.97" allowfullscreen="true" style="position:relative;"></iframe>
-                <div class="contact__info">
+                <iframe data-aos="fade-right" class="map" src="https://yandex.by/map-widget/v1/?ll=30.353616%2C53.816826&mode=search&oid=28928490196&ol=biz&sll=29.225542%2C53.145595&sspn=0.151405%2C0.052121&text=%D1%81%D0%BA%D0%B1%20%D0%B4%D0%B0%D0%BB%D1%81&z=11.97" allowfullscreen="true" style="position:relative;"></iframe>
+                <div data-aos="fade-left" class="contact__info">
 
                     <h5 class="c__h5">Адрес</h5>
                     <p>Могилёвский район, Вейнянский сельсовет, 53</p>
@@ -72,9 +73,6 @@
                 <a href="index.html">Главная</a>
             </li>
             <li>
-                <a href="about.html">О нас</a>
-            </li>
-            <li>
                 <a href="works.html">Работы</a>
             </li>
             <li>
@@ -86,5 +84,10 @@
             <script src="../js/current_year.js"></script>    
         </div>    
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

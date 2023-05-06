@@ -40,6 +40,7 @@ body {
     color: #fff;
     font-size: 48px;
     text-shadow: 1px 1px 1px #000;
+    margin: auto 30%;
 }
 .subtitle {
     background: linear-gradient(20deg, rgb(65, 122, 196) 33%, rgb(83, 89, 155));
@@ -120,7 +121,7 @@ a {
     height: 64px;
 }
 @media screen and (max-width: 1280px) {
-    .discription__text {
+    .discription__text, .text {
         margin: 20px;
     }
 }

@@ -24,13 +24,19 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
+.works:hover > :not(:hover) {
+    opacity: 0.4;
+    transform: scale(0.9);
+}
 .work__card {
     width: 300px;
-    aspect-ratio: 1/1.5;
+    aspect-ratio: 1/1.1;
     margin: 20px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: .35s;
+    cursor: pointer;
 }
 @media screen and (max-width: 1281px) {
     .container {

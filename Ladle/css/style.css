@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-
 body {
     margin: 0;
     box-sizing: border-box;
-
     font-family: 'Nunito', sans-serif;
 }
-
+.header, .main, .advantages, .footer, .contacts, .works__wrapper, .block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text, .subtitle, .discription__text, .advantage, .footer, .block, .wrapper i {
+    text-align: center;
+}
+.header, .advantage, .block {
+    border-radius: 20px;    
+}
+.main, .pic {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .header {
     margin: 5px 10px;
-    border-radius: 20px;
     position: fixed;
 	z-index: 1;
 	left: 0;
@@ -19,9 +31,6 @@ body {
 	height: 65px;
     background: linear-gradient(90deg, rgba(255,158,0,1) 0%, rgba(255,205,0,1) 50%, rgba(254,183,0,1) 100%);
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .logo {
     height: 40px;
@@ -29,18 +38,9 @@ body {
 .main {
     height: 100vh;
     background-image: url(../assets/main.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .text {
-    text-align: center;
     word-break: normal;
-
     color: #fff;
     font-size: 48px;
     text-shadow: 1px 1px 1px #000;
@@ -50,111 +50,93 @@ body {
     background: linear-gradient(90deg, rgba(255,158,0,1) 0%, rgba(255,205,0,1) 50%, rgba(254,183,0,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    text-align: center;
-
     font-size: 42px;
     margin: 20px;
 }
-
 .discription__text {
-    text-align: center;
     font-size: 32px;
-
     margin: 20px 20% 30px;
 }
-.advantages {
-    display: flex;
+.advantages, .contacts {
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 .advantage {
     width: 300px;
     height: 310px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
     font-size: 24px;
-    border-radius: 20px;
     margin: 10px;
     border: 1px solid rgba(255,205,0,1);
-    border-radius: 20px;
 }
-.adv__text {
+.adv__text, .adv__img, .footer p {
     margin: 5px;
 }
 .adv__img {
     width: 72px;
-    margin: 5px;
 }
-
 .pic {
     height: 300px;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.slides {
-    display: flex;
-    flex-direction: row;
-    opacity: 0;
-    height: 0px;
-    z-index: -111111;
-}
-.slide {
-    width: 300px;
-    aspect-ratio: 1/1;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.slide__img {
-    width: 450px;
-}
-.splide__list {
-    align-items: center;
-}
-.splide__slide {
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
 }
 .footer {
     background-color: rgb(37, 37, 37);
     height: 48px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .footer p {
-    margin: 5px;
     color: darkgray;
 }
-.contacts {
+.wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    max-width: 1280px;
+    position: relative;
+}
+.wrapper i {
+    background: rgba(255,205,0,1);
+    color: #fff;
+    font-size: 1.2rem;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    cursor: pointer;
+    border-radius: 50%;
+    line-height: 44px;
+}
+.wrapper i:first-child {
+    left: 5px;
+    display: none;
+}
+.wrapper i:last-child {
+    right: 5px;
+}
+.wrapper, .carousel {
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img {
+    pointer-events: none;
+}
+.carousel img {
+    width: calc(100% / 3);
+    margin-left: 10px;
+    object-fit: cover;
+}
+.carousel img:first-child {
+    margin-left: 0px;
 }
 .block {
     margin: 15px;
     width: 250px;
     height: 150px;
     border: 1px solid rgba(255,205,0,1);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
 }
 a {
     text-decoration: none;
@@ -168,33 +150,15 @@ a {
     .discription__text, .text {
         margin: 10px;
     }
-    .splide {
-        height: 0px;
-        opacity: 0;
-        z-index: -1111;
-    }
-    .slides {
-        height: 100%;
-        opacity: 1;
-        z-index: 0;
-        display: grid;
-        gap: 1rem;
-        grid-auto-flow: column;
-        overflow-y: auto;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
-    }
-    .slide {
-        width: 300px;
-        aspect-ratio: 1/1;
-    
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .carousel img {
+        width: calc(100% / 2);
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
+    .carousel img {
+        width: 100vw;
+        margin: 0;
+    }
     .text {
         font-size: 32px;
     }

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/splide-core.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <script src="js/slider.js" defer></script>
 
-    <title>Ремонт и восстановление ковшей - Ladle Dals</title>
+    <title>Ремонт и восстановление ковшей - Excavators Dals</title>
 </head>
 <body>
     <nav class="header">
@@ -25,7 +25,6 @@
         <h2 class="subtitle">
             Чем мы занимаемся?
         </h2>
-
         <p class="discription__text">
             СКБ ДалС специализируется на восстановлении и ремонте ковшей экскаваторов. Компания предоставляет услуги по ремонту и модернизации ковшей для различных типов экскаваторов.
         </p>
@@ -36,7 +35,6 @@
     <h2 class="subtitle">
         Почему мы?
     </h2>
-
     <div class="advantages">
         <div class="advantage">
             <img class="adv__img" src="assets/experience.png" alt="#">
@@ -68,44 +66,24 @@
         </p>
     </div>
 
-    <div class="slides">
-        <div class="slide" style="background-image: url(assets/1.jpg)"></div>
-        <div class="slide" style="background-image: url(assets/2.jpg)"></div>
-        <div class="slide" style="background-image: url(assets/3.jpg)"></div>
-        <div class="slide" style="background-image: url(assets/4.jpg)"></div>
-        <div class="slide" style="background-image: url(assets/5.jpg)"></div>
-        <div class="slide" style="background-image: url(assets/6.jpg)"></div>
-    </div>
-
-    <section class="splide gallery" aria-label="gallery">
-        <div class="splide__track">
-              <ul class="splide__list">
-                  <li class="splide__slide">
-                    <img class="slide__img" src="assets/1.jpg" alt="#">
-                  </li>
-                  <li class="splide__slide">
-                    <img class="slide__img" src="assets/2.jpg" alt="#">
-                  </li>
-                  <li class="splide__slide">
-                    <img class="slide__img" src="assets/3.jpg" alt="#">
-                  </li>
-                  <li class="splide__slide">
-                    <img class="slide__img" src="assets/4.jpg" alt="#">
-                  </li>
-                  <li class="splide__slide">
-                    <img class="slide__img" src="assets/5.jpg" alt="#">
-                  </li>
-                  <li class="splide__slide">
-                    <img class="slide__img" src="assets/6.jpg" alt="#">
-                  </li>
-              </ul>
+    <div class="works__wrapper">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+                <img src="assets/1.jpg" alt="#" draggable="false">
+                <img src="assets/2.jpg" alt="#" draggable="false">
+                <img src="assets/3.jpg" alt="#" draggable="false">
+                <img src="assets/4.jpg" alt="#" draggable="false">
+                <img src="assets/5.jpg" alt="#" draggable="false">
+                <img src="assets/6.jpg" alt="#" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
-      </section>
-
+    </div>
+    
     <h2 class="subtitle">
         Контакты
     </h2>
-    
     <div class="contacts">
         <div class="block">
             <img src="assets/phone.png" alt="#">
@@ -125,22 +103,5 @@
         <p style="cursor: default;">ООО "СКБ ДалС" &copy; 2014 - <span id="current__year"></span>. Все права защищены.<p>
         <script src="./js/current_year.js"></script>
     </div>
-
-    <script src="js/splide.min.js"></script>
-    <script src="./js/come_back.js"></script>
-    <script>
-        const splide = new Splide('.gallery', {
-            type: 'loop',
-            drag: 'free',
-            focus: 'center',
-            arrows: false,
-            pagination: false,
-            perPage: 3,
-            autoScroll: {
-                speed: 1,
-            },
-        });
-        splide.mount(window.Splide.Extensions)
-    </script>
 </body>
 </html>

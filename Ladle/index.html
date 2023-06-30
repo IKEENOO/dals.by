@@ -7,48 +7,51 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <script src="js/slider.js" defer></script>
 
     <title>Ремонт и восстановление ковшей - Excavators Dals</title>
 </head>
 <body>
-    <nav class="header">
+    <nav data-aos="zoom-in" class="header">
         <img class="logo" src="./assets/dals_logo.png" alt="Logo">
     </nav>
 
     <div class="main">
-        <h1 class="text">Восстановление и ремонт ковшей и стрел экскаваторов</h1>
+        <h1 data-aos="zoom-in" class="text">Восстановление и ремонт ковшей и стрел экскаваторов</h1>
     </div>
 
     <div class="about">
-        <h2 class="subtitle">
+        <h2 data-aos="zoom-in" class="subtitle">
             Чем мы занимаемся?
         </h2>
-        <p class="discription__text">
+        <p data-aos="zoom-in" class="discription__text">
             СКБ ДалС специализируется на восстановлении и ремонте ковшей экскаваторов. Компания предоставляет услуги по ремонту и модернизации ковшей для различных типов экскаваторов.
         </p>
     </div>
 
-    <div class="pic" style="background-image: url(assets/picone.jpg)"></div>
+    <div data-aos="zoom-in" class="pic" style="background-image: url(assets/picone.jpg)"></div>
 
-    <h2 class="subtitle">
+    <h2 data-aos="zoom-in" class="subtitle">
         Почему мы?
     </h2>
     <div class="advantages">
-        <div class="advantage">
+        <div data-aos="zoom-in" class="advantage">
             <img class="adv__img" src="assets/experience.png" alt="#">
             <p class="adv__text">
                 Мы имеем значительный опыт в области восстановления и ремонта ковшей экскаваторов
             </p>
         </div>
-        <div class="advantage">
+        <div data-aos="zoom-in" class="advantage">
             <img class="adv__img" src="assets/tools.png" alt="#">
             <p class="adv__text">
                 Мы используем современное оборудование и технологии, обеспечивая высокое качество работы
             </p>
         </div>
-        <div class="advantage">
+        <div data-aos="zoom-in" class="advantage">
             <img class="adv__img" src="assets/metal.png" alt="#">
             <p class="adv__text">
                 Мы используем только высококачественные материалы и запчасти при ремонте ковшей экскаваторов
@@ -57,16 +60,16 @@
     </div>
 
     <div class="works">
-        <h2 class="subtitle">
+        <h2 data-aos="zoom-in" class="subtitle">
             Наши работы
         </h2>
 
-        <p class="discription__text">
+        <p data-aos="zoom-in" class="discription__text">
             Благодаря многолетней работе в этой сфере, наши специалисты имеют высокую квалификацию и знания в области проектирования и технического обслуживания ковшей. Большой опыт позволяет нам быстро и качественно решать любые задачи, связанные с восстановлением и ремонтом ковшей экскаваторов.
         </p>
     </div>
 
-    <div class="works__wrapper">
+    <div data-aos="zoom-in" class="works__wrapper">
         <div class="wrapper">
             <i id="left" class="fa-solid fa-angle-left"></i>
             <div class="carousel">
@@ -81,19 +84,19 @@
         </div>
     </div>
     
-    <h2 class="subtitle">
+    <h2 data-aos="zoom-in" class="subtitle">
         Контакты
     </h2>
     <div class="contacts">
-        <div class="block">
+        <div data-aos="zoom-in" class="block">
             <img src="assets/phone.png" alt="#">
             <a href="tel:80333814010">+375 (33) 381-40-10</a>
         </div>
-        <div class="block">
+        <div data-aos="zoom-in" class="block">
             <img src="assets/location.png" alt="#">
             <a target="_blank" href="https://yandex.by/maps/-/CCUHy2XW1C">Могилёвский район, Вейнянский сельсовет, 53</a>
         </div>
-        <div class="block">
+        <div data-aos="zoom-in" class="block">
             <img src="assets/email.png" alt="#">
             <a href="mailto:contact.dals.by@gmail.com">contact.dals.by@gmail.com</a>
         </div>
@@ -103,5 +106,10 @@
         <p style="cursor: default;">ООО "СКБ ДалС" &copy; 2014 - <span id="current__year"></span>. Все права защищены.<p>
         <script src="./js/current_year.js"></script>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

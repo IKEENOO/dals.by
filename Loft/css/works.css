@@ -3,9 +3,17 @@ body {
     box-sizing: border-box;
     font-family: 'Advent Pro', sans-serif;
 }
+:root  {
+    --leadColor: #fff;
+}
+.footer__tagline, .footer ul li a, .copyright p {
+    color: var(--leadColor);
+}
 .pic {
     height: 25vh;
     background-image: url(../assets/pic.jpg);
+}
+.pic, .work__card {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,10 +26,12 @@ body {
     text-align: center;
     font-size: 48px;
 }
-.works {
+.works, .copyright {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.works {
     flex-wrap: wrap;
 }
 .works:hover > :not(:hover) {
@@ -32,9 +42,6 @@ body {
     width: 300px;
     aspect-ratio: 1/1.1;
     margin: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     transition: .35s;
     cursor: pointer;
 }
@@ -43,17 +50,14 @@ body {
         width: 100%;
     }
 }
-
 .footer {
     background-color: #252525;
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 .footer__tagline {
     font-size: 24px;
-    color: #fff;
     margin: 12px auto;
     text-align: center;
 }
@@ -67,7 +71,6 @@ body {
     text-align: center;
 }
 .footer ul li a {
-    color: #fff;
     text-decoration: none;
     opacity: 0.8;
 }
@@ -79,17 +82,10 @@ body {
     opacity: 1;
 }
 .footer__logo {
-margin: 20px auto;
+    margin: 20px auto;
     height: 32px;
 }
 .copyright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     height: 30px;
     padding: 25px 0px;
-}
-.copyright p {
-    color: #fff;
 }

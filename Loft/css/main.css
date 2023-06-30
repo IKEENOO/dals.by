@@ -4,16 +4,26 @@ body {
     font-family: 'Play', sans-serif;
     overflow-x: hidden;
 }
+:root  {
+    --leadColor: #fff;
+}
+.tagline__text, .footer__tagline, .footer ul li a, .copyright p {
+    color: var(--leadColor);
+}
 .main__block {
     display: flex;
     justify-content: flex-start;
     align-items: end;
-    height: 100vh;
     background-image: url(../assets/Main_block.jpg);
+    z-index: 0;
+}
+.main__block, .pic__block {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
+    background-size: cover; 
+}
+.main__block, .first__block, .second__block, .pic__block {
+    height: 100vh;
 }
 .tagline__block {
     max-width: 70vw;
@@ -23,11 +33,9 @@ hr {
     width: 90%;
 }
 .tagline__text {
-    color: #fff;
     font-size: 5vh;
 }
 .first__block, .second__block {
-    height: 100vh;
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
@@ -35,7 +43,7 @@ hr {
 .pic__block, .text__block {
     width: 50vw;
 }
-.text__block {
+.text__block, .copyright {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,26 +55,20 @@ hr {
     font-size: 24px;
 }
 .pic__block {
-    height: 100vh;
     width: 50vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-
-
 .footer {
     background-color: #252525;
     display: flex;
     align-items: center;
     flex-direction: column;
-
+}
+.footer__tagline, .footer ul, .copyright p {
+    text-align: center;
 }
 .footer__tagline {
     font-size: 24px;
-    color: #fff;
     margin: 12px auto;
-    text-align: center;
 }
 .footer ul {
     margin-top: 0;
@@ -75,10 +77,8 @@ hr {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 0;
-    text-align: center;
 }
 .footer ul li a {
-    color: #fff;
     text-decoration: none;
     opacity: 0.8;
 }
@@ -90,18 +90,10 @@ hr {
     opacity: 1;
 }
 .footer__logo {
-margin: 20px auto;
+    margin: 20px auto;
     height: 32px;
 }
 .copyright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     height: 30px;
     padding: 25px 0px;
-}
-.copyright p {
-    color: #fff;
-    text-align: center;
 }

@@ -117,6 +117,7 @@ body {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    list-style: none;
 }
 .card__image {
     height: 125px;

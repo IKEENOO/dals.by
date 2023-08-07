@@ -1,3 +1,3 @@
-    const year = document.querySelector('#current__year')
+const year = document.querySelector('#current__year')
 
-    year.innerHTML = new Date().getFullYear()
+year.innerHTML = new Date().getFullYear()

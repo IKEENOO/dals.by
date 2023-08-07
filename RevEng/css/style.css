@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway&display=swap');
+body {
+    padding: 0 5%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+.main, .ach__photo, .desc__photo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../assets/main.jpg);
+    background-size: contain;
+}
+.main h1, h2, .title {
+    font-family: 'Press Start 2P';
+    color: #fff;
+    text-align: center;
+}
+.main h1 {
+    font-size: 4vh;
+}
+.main h2, .title {
+    font-size: 3vh;
+}
+.description {
+    width: 60%;
+}
+.description p, .ach__title, .form p {
+    color: #fff;
+    font-size: 3vh;
+}
+.desc__one {
+    margin-left: 0;
+    margin-right: auto;
+}
+.desc__two {
+    margin-left: auto;
+    margin-right: 0;
+}
+.desc__photo {
+    height: 35vh;
+    border-radius: 20px;
+    background-image: url(../assets/descOne.jpg);
+}
+.ach {
+    padding: 0 5%;
+    width: 70%;
+    margin: 20px auto;
+    border: 1px solid #0362AD;
+    border-radius: 20px;
+}
+.ach__photo {
+    height: 35vh;
+    width: 100%;
+    margin-bottom: 28px;
+}
+.ach__one {
+    background-image: url(../assets/achOne.jpg);    
+}
+.ach__two {
+    background-image: url(../assets/achTwo.jpg);
+}
+.ach__three {
+    background-image: url(../assets/achThree.jpg);
+}
+.form, .form form, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+input, button {
+    transition: .3s;
+    font-size: 2vh;
+    padding: 15px;
+    width: 300px;
+    color: darkgrey;
+    background-color: #000;
+    border-radius: 20px;
+    border: 1px solid #0362AD;
+    margin: 10px;
+}
+button:hover {
+    cursor: pointer;
+}
+button:active {
+    transform: scale(0.9);
+}
+footer {
+    margin-top: 50px;
+}
+.footer__logo {
+    height: 65px;
+    margin: 20px;
+}
+footer p, a {
+    color: #fff;
+    font-size: 2vh;
+    margin: 5px;
+    opacity: 0.8;
+}
+.year {
+    opacity: 1;
+}
+footer a {
+    text-decoration: none;
+}
+footer p:hover, footer a:hover {
+    color: #0362AD;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: #696969;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #333333;
+}

@@ -104,6 +104,9 @@ body {
 .ladle__photo {
     background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/Ladle/assets/main.jpg);
 }
+.reveng__photo {
+    background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/RevEng/assets/main.jpg);
+}
 
 .services, .works {
     display: flex;

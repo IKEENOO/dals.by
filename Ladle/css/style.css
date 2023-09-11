@@ -3,6 +3,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
 }
 .header, .main, .advantages, .footer, .contacts, .works__wrapper, .block {
     display: flex;
@@ -79,11 +80,14 @@ body {
     width: 100%;
 }
 .footer {
+    flex-direction: column;
     background-color: rgb(37, 37, 37);
-    height: 48px;
 }
 .footer p {
     color: darkgray;
+}
+.footer a img {
+    height: 50px;
 }
 .wrapper {
     display: flex;

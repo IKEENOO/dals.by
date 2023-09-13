@@ -27,7 +27,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/preloader.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     
@@ -50,6 +51,10 @@
             webvisor:true
         });
     </script>
+
+    <div id="preloader">
+        <div class="preloader"></div>
+    </div>
 
     <nav class="navbar">
         <input id="nav-toggle" type="checkbox">
@@ -78,10 +83,10 @@
                 <h2 class="m__h2">Специализированное конструкторское бюро</h2> 
             </div>
             <div class="what__we__do">
-                <p><i class="material-icons">trending_up</i><span>Большой спектр видов обработки</span></p>
-                <p><i class="material-icons">explore</i><span>Проектирование и полное курирование проекта</span></p>
-                <p><i class="material-icons">settings_input_svideo</i><span>Техническое и декоративное изготовление</span></p>
-                <p><i class="material-icons">apps</i><span>Единичное и серийное производство</span></p>
+                <p><i class="icons fa-solid fa-chart-simple"></i><span>Большой спектр видов обработки</span></p>
+                <p><i class="icons fa-solid fa-compass-drafting"></i><span>Проектирование и полное курирование проекта</span></p>
+                <p><i class="icons fa-solid fa-pen-ruler"></i><span>Техническое и декоративное изготовление</span></p>
+                <p><i class="icons fa-solid fa-layer-group"></i><span>Единичное и серийное производство</span></p>
             </div>
         </div>
     </section>
@@ -210,7 +215,7 @@
 
 				<a href="tel:80333814010"><i class="icons fa-solid fa-phone-volume"></i>+375 (33) 381-40-10</a>
 
-				<a href="mailto:contact.dals.by@gmail.com"><i class="icons fa-regular fa-envelope"></i>contact.dals.by@gmail.com</a>
+				<a href="mailto:contact.dals.by@gmail.com"><i class="icons fa-solid fa-envelope"></i>contact.dals.by@gmail.com</a>
 
 			</div>
 			<div id="footer__second">
@@ -222,19 +227,28 @@
 
 				<a href="works.html"><p><i class="icons fa-solid fa-briefcase"></i>Наши работы</p></a>
 
-				<a href="contacts.html"><p><i class="icons fa-regular fa-address-card"></i>Контакты</p></a>
+				<a href="contacts.html"><p><i class="icons fa-solid fa-address-card"></i>Контакты</p></a>
 
 			</div>
 		</div>
 		<div class="copyright">
 			<p>© ООО "СКБ ДалС", 2014 - <span id="current__year"></span><p>
-            <script src="js/current_year.js"></script> 
+            <script src="js/current_year.js" async></script> 
 		</div>
 	</footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/9f8261dd8f.js" crossorigin="anonymous"></script>
-    <script src="./js/scroll.js"></script>
+    <script>
+        window.onload = function() {
+            let preloader = document.getElementById('preloader');
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+            sleep(2000).then(() => { preloader.style.display = 'none'; }); 
+        };
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" async></script>
+    <script src="https://kit.fontawesome.com/9f8261dd8f.js" crossorigin="anonymous" async></script>
+    <script src="./js/scroll.js" async></script>
     <script>
         AOS.init();
     </script>

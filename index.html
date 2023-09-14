@@ -104,37 +104,28 @@
             </div>  
         </div>
     </section>
-    
+
     <section>
         <div class="services">
             <div class="about__section">
                 <h2 class="section__name">Услуги</h2>
             </div>
-            <ul class="services__cards">
-                <li data-aos="zoom-in" class="services__card">
-                    <div class="card__image" style="background-image: url(assets/cards/engineering.jpg);">
+            <ul class="services__cards" id="services__cards">
+                <!-- <li data-aos="zoom-in" class="scard">
+                    <div class="cimage" style="background-image: url(assets/cards/engineering.jpg);">
                         <h4 class="service__name">Проектирование</h4>
                     </div>
-                    <div class="card_description">
-                        <p>СКБ "ДалС" предоставляет услуги проектирования инженерных объектов в машиностроении и строительстве.</p>
-                    </div>
                 </li>
-                <li data-aos="zoom-in" class="services__card">
-                    <div class="card__image" style="background-image: url(assets/cards/welding.jpg);">
+                <li data-aos="zoom-in" class="scard">
+                    <div class="cimage" style="background-image: url(assets/cards/welding.jpg);">
                         <h4 class="service__name">Сварочные работы</h4>
                     </div>
-                    <div class="card_description">
-                        <p>Сварка любых металлов всеми видами сварки (MIG, MAG, TIG). Также мы оказываем услугу по выезду сварочной бригады на место работ.</p>
-                    </div>
                 </li>
-                <li data-aos="zoom-in" class="services__card">
-                    <div class="card__image" style="background-image: url(assets/cards/mill.jpg);">
+                <li data-aos="zoom-in" class="scard">
+                    <div class="cimage" style="background-image: url(assets/cards/mill.jpg);">
                         <h4 class="service__name">Фрезерные работы</h4>
                     </div>
-                    <div class="card_description">
-                        <p>Фрезерование различных видов материалов на универсальном станке (размер стола 550х350мм).</p>
-                    </div>
-                </li>
+                </li> -->
             </ul>
         </div>
     </section>
@@ -246,8 +237,9 @@
             sleep(2000).then(() => { preloader.style.display = 'none'; }); 
         };
     </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" async></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/9f8261dd8f.js" crossorigin="anonymous" async></script>
+    <script src="./js/iServices.js"></script>
     <script src="./js/scroll.js" async></script>
     <script>
         AOS.init();

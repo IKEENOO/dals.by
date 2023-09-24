@@ -52,8 +52,11 @@
         });
     </script>
 
-    <div id="preloader">
-        <div class="preloader"></div>
+    <div class="mask">
+        <div class="loader">
+            <span>DALS</span>
+            <span>DALS</span>
+        </div>
     </div>
 
     <nav class="navbar">
@@ -111,7 +114,7 @@
                 <h2 class="section__name">Услуги</h2>
             </div>
             <ul class="services__cards" id="services__cards">
-                <!-- <li data-aos="zoom-in" class="scard">
+                <li data-aos="zoom-in" class="scard">
                     <div class="cimage" style="background-image: url(assets/cards/engineering.jpg);">
                         <h4 class="service__name">Проектирование</h4>
                     </div>
@@ -125,7 +128,7 @@
                     <div class="cimage" style="background-image: url(assets/cards/mill.jpg);">
                         <h4 class="service__name">Фрезерные работы</h4>
                     </div>
-                </li> -->
+                </li>
             </ul>
         </div>
     </section>
@@ -228,18 +231,13 @@
 		</div>
 	</footer>
 
-    <script>
-        window.onload = function() {
-            let preloader = document.getElementById('preloader');
-            function sleep(ms) {
-                return new Promise(resolve => setTimeout(resolve, ms));
-            }
-            sleep(2000).then(() => { preloader.style.display = 'none'; }); 
-        };
-    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/9f8261dd8f.js" crossorigin="anonymous" async></script>
+    <script src="./js/loader.js"></script>
+    <!-- <script src="./js/services.js" type="module"></script>
     <script src="./js/iServices.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script> -->
     <script src="./js/scroll.js" async></script>
     <script>
         AOS.init();

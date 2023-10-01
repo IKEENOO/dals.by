@@ -9,8 +9,8 @@ function showSlides() {
     let slideNumber = 1;
     services.forEach(element => {
         let slideTemplate = `
-<li data-aos="zoom-in" class="scard">
-<div class="cimage" style="background-image: url(assets/cards/%image%.jpg);">
+<li data-aos="zoom-in" class="service__card">
+<div class="card__image" style="background-image: url(assets/cards/%image%.jpg);">
     <h4 class="service__name">%name%</h4>
 </div>
 </li>`;

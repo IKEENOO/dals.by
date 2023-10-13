@@ -6,50 +6,33 @@ body {
     scroll-behavior: smooth;
 }
 .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
     height: 100vh;
     background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/assets/main_page.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.m__h {
-    font-family: 'Roboto Slab', serif;
-    text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
-    padding-bottom: 50px;
 }
 .about__section {
     font-family: 'Roboto Slab', serif;
-    text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
+}
+.m__h1, .m__h2 .about__section, .what__we__do p, .service__name {
+    text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.5);
+}
+.main h1, h2, .what__we__do p, .m__h2, .section__description, .section__block, .section__text p, .service__name, .contact__info {
+    text-align: center;
 }
 .main h1, h2 {
     color: #fff;
     margin: 15px;
-    text-align: center;
-    text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
 }
 .what__we__do {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    margin-top: 25px;
     color: #fff;
 }
-.what__we__do p{
+.what__we__do p {
     font-size: 20px;
-    text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
     margin: 18px 0px;
     display: flex;
-    align-items: center;
-}
-.about__us, .our__job, .loft {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 .section__description, .section__name {
     color: rgba(65, 122, 196);
@@ -61,9 +44,7 @@ body {
 }
 .m__h2, .section__description {
     font-size: 32px;
-    text-align: center;
 }
-
 .section__blocks {
     display: flex;
     align-items: center;
@@ -74,24 +55,13 @@ body {
     width: 40vw;
     aspect-ratio: 1.5;
     display: flex;
-    align-items: center;
     box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.35);
-    transition: 0.3s;
     border-radius: 20px;
     margin: 25px;
-}
-.section__block:hover {
-    box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.5);
 } 
 .section__text p {
     margin: 25px;
-    text-align: center;
     font-size: 26px;
-}
-.section__photo {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .about__us__photo {
     background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/assets/about_us.jpg);
@@ -109,79 +79,50 @@ body {
     background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/RevEng/assets/main.jpg);
 }
 
-.services, .works {
+.main, .services, .works, .services__cards, .card__image, .contacts, .works__cards, .contacts, .contact, .contact__info, .about__us, .our__job, .loft {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.main, .services, .works, .what__we__do, .about__us, .our__job, .loft, .contact__info {
     flex-direction: column;
 }
 .services__cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
 }
-.scard {
+.service__card {
     height: 250px;
     border-radius: 20px;
 }
-.cimage {
-    height: 100%;
+.main, .card__image, .works__card, .section__photo {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
 }
 .card__image {
-    height: 125px;
-    background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/assets/cards/engineering.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    border-radius: 20px 20px 0px 0px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    border-radius: 20px;
 }
 .service__name {
-    text-align: center;
     color: #fff;
     font-size: 32px;
     margin: 0px;
-    text-shadow: 2px 1px 2px rgba(65, 122, 196, 0.35);
 }
-.services__card, .works__card, .scard {
+.works__card, .service__card {
     width: 400px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px 2px rgba(65, 122, 196, 0.35);
     margin: 25px;
 }
-.contacts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+
 .works__cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
 }
 .works__card {
     width: 400px;
     height: 290px;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .link__button {
     display: flex;
@@ -199,19 +140,6 @@ body {
     display: flex;
     align-items: center;
 }
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.contact__info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    text-align: center;
-}
 .contact__info p {
     margin: 0px;
 }
@@ -227,16 +155,6 @@ body {
     height: 60vh;
     border-radius: 20px;
     margin: 25px;
-}
-.c__h5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 0px;
-    padding: 15px;
-    color: rgba(65,122,196,1);
-    font-size: 24px;
 }
 #contact__info a {
     display: flex;

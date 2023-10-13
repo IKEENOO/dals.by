@@ -2,5 +2,5 @@ let mask = document.querySelector('.mask');
 
 window.addEventListener('load', () => {
     mask.classList.add('hide');
-    setTimeout(() => {mask.remove();}, 1000)
+    setTimeout(() => {mask.remove();}, 2500)
 })

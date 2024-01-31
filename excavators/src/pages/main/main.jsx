@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './main.css'
+
+AOS.init();
 
 export class Main extends Component {
     render() {
@@ -101,11 +105,7 @@ export class Main extends Component {
                     <script src="./js/current_year.js"></script>
                 </div>
 
-                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
                 <script src="./js/scroll.js"></script>
-                <script>
-                    AOS.init();
-                </script>
             </>
         );
     }

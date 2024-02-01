@@ -21,6 +21,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.pic {
+    background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/picone.jpg)
+}
 .header {
     margin: 5px 10px;
     position: fixed;
@@ -38,7 +41,7 @@ body {
 }
 .main {
     height: 100vh;
-    /*background-image: url(../assets/main.jpg);*/
+    background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/main.jpg);
 }
 .text {
     word-break: normal;

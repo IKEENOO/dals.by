@@ -11,7 +11,7 @@ export class Main extends Component {
             <>
                 <nav data-aos="zoom-in" className="header">
                     <a href="#main">
-                        <img className="logo" src="./assets/dals_logo.png" alt="Logo"/>
+                        <img className="logo" src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/dals_logo.png" alt="Logo"/>
                     </a>
                 </nav>
 
@@ -28,26 +28,26 @@ export class Main extends Component {
                     </p>
                 </div>
 
-                <div data-aos="zoom-in" className="pic" /*style={"background-image: url(assets/picone.jpg)"}*/></div>
+                <div data-aos="zoom-in" className="pic" ></div>
 
                 <h2 data-aos="zoom-in" className="subtitle">
                     Почему мы?
                 </h2>
                 <div className="advantages">
                     <div data-aos="zoom-in" className="advantage">
-                        <img className="adv__img" src="assets/experience.png" alt="#"/>
+                        <img className="adv__img" src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/experience.png" alt="#"/>
                         <p className="adv__text">
                             Мы имеем значительный опыт в области восстановления и ремонта ковшей экскаваторов
                         </p>
                     </div>
                     <div data-aos="zoom-in" className="advantage">
-                        <img className="adv__img" src="assets/tools.png" alt="#"/>
+                        <img className="adv__img" src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/tools.png" alt="#"/>
                         <p className="adv__text">
                             Мы используем современное оборудование и технологии, обеспечивая высокое качество работы
                         </p>
                     </div>
                     <div data-aos="zoom-in" className="advantage">
-                        <img className="adv__img" src="assets/metal.png" alt="#"/>
+                        <img className="adv__img" src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/metal.png" alt="#"/>
                         <p className="adv__text">
                             Мы используем только высококачественные материалы и запчасти при ремонте ковшей экскаваторов
                         </p>
@@ -68,12 +68,12 @@ export class Main extends Component {
                     <div className="wrapper">
                         <i id="left" className="fa-solid fa-angle-left"></i>
                         <div className="carousel">
-                            <img src="assets/1.jpg" alt="#" draggable="false"/>
-                            <img src="assets/2.jpg" alt="#" draggable="false"/>
-                            <img src="assets/3.jpg" alt="#" draggable="false"/>
-                            <img src="assets/4.jpg" alt="#" draggable="false"/>
-                            <img src="assets/5.jpg" alt="#" draggable="false"/>
-                            <img src="assets/6.jpg" alt="#" draggable="false"/>
+                            <img src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/1.jpg" alt="#" draggable="false"/>
+                            <img src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/2.jpg" alt="#" draggable="false"/>
+                            <img src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/3.jpg" alt="#" draggable="false"/>
+                            <img src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/4.jpg" alt="#" draggable="false"/>
+                            <img src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/5.jpg" alt="#" draggable="false"/>
+                            <img src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/6.jpg" alt="#" draggable="false"/>
                         </div>
                         <i id="right" className="fa-solid fa-angle-right"></i>
                     </div>
@@ -84,22 +84,22 @@ export class Main extends Component {
                 </h2>
                 <div className="contacts">
                     <div data-aos="zoom-in" className="block">
-                        <img src="assets/phone.png" alt="#"/>
+                        <img src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/phone.png" alt="#"/>
                         <a href="tel:80447117633">+375 (44) 711-76-33</a>
                     </div>
                     <div data-aos="zoom-in" className="block">
-                        <img src="assets/location.png" alt="#"/>
+                        <img src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/location.png" alt="#"/>
                         <a target="_blank" href="https://yandex.by/maps/-/CCUHy2XW1C">Могилёвский район, Вейнянский сельсовет, 53</a>
                     </div>
                     <div data-aos="zoom-in" className="block">
-                        <img src="assets/email.png" alt="#"/>
+                        <img src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/email.png" alt="#"/>
                         <a href="mailto:contact.dals.by@gmail.com">contact.dals.by@gmail.com</a>
                     </div>
                 </div>
 
                 <div className="footer">
                     <a href="https://dals.by" target="_blank">
-                        <img className="footer__logo" src="assets/dals_logo.png" alt="Логотип"/>
+                        <img className="footer__logo" src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/excavators/src/assets/dals_logo.png" alt="Логотип"/>
                     </a>
                     <p >ООО "СКБ ДалС" &copy; 2014 - <span id="current__year"></span>. Все права защищены.</p>
                     <script src="./js/current_year.js"></script>

@@ -13,12 +13,12 @@ function Navbar() {
 
 	return (
 		<header>
-			<h3>LOGO</h3>
+			<img className="nav_img" src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/press/src/assets/dals_logo.png" alt="logo"/>
 			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">My work</a>
-				<a href="/#">Blog</a>
-				<a href="/#">About me</a>
+				<a href="/">Главная</a>
+				<a href="/#about">О нас</a>
+				<a href="/#molds">Пресс-формы</a>
+				<a href="/#contact">Контакты</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

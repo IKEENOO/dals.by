@@ -1,8 +1,51 @@
-section {
-    height: 100vh;
+body {
+    margin: 0;
+    box-sizing: border-box;
 }
-.description {
+section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;  
+}
+.main_sec {
+    background-image: url(https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/press/src/assets/main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h1 {
+    font-size: clamp(36px, 5vw, 128px);
+    font-weight: 900;
+    color: #fff;
+    text-shadow: #ff0015 5px 5px;
+}
+.molds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.molds img {
+    width: clamp(260px, 30%, 480px);
+}
+.description {
+    text-align: center;
+}
+h2 {
+    font-size: clamp(24px, 3vh, 48px);
+    background-color: #ff0015;
+    color: #fff;
+    font-weight: 900;
+    margin: 50px;
+}
+p {
+    text-align: center;
+    margin: 20px;
+    max-width: 70%;
+    font-size: clamp(18px, 2vh, 36px);
+}
+ul li {
+    margin: 50px;
 }

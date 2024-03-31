@@ -1,36 +1,29 @@
-import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import React from 'react';
 import "./navbar.css";
 
 function Navbar() {
-	const navRef = useRef();
-
-	const showNavbar = () => {
-		navRef.current.classList.toggle(
-			"responsive_nav"
-		);
-	};
-
 	return (
-		<header>
-			<img className="nav_img" src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/press/src/assets/dals_logo.png" alt="logo"/>
-			<nav ref={navRef}>
-				<a href="/">Главная</a>
-				<a href="/#about">О нас</a>
-				<a href="/#molds">Пресс-формы</a>
-				<a href="/#contact">Контакты</a>
-				<button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-				</button>
+		<>
+			<nav className="navbar">
+				<input id="nav-toggle" type="checkbox"/>
+				<div className="logo">
+					<div className="dals__block">
+						<img className="dals__logo" src="https://cdn.jsdelivr.net/gh/IKEENOO/dals.by/press/src/assets/dals_logo.png" alt="logo"/>
+					</div>
+				</div>
+				<ul className="links">
+					<li><a href="/">Главная</a></li>
+					<li><a href="/#about">О нас</a></li>
+					<li><a href="/#molds">Формы</a></li>
+					<li><a href="/#contact">Контакты</a></li>
+				</ul>
+				<label for="nav-toggle" className="icon-burger">
+					<div className="line"></div>
+					<div className="line"></div>
+					<div className="line"></div>
+				</label>
 			</nav>
-			<button
-				className="nav-btn"
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
-		</header>
+		</>
 	);
 }
 
